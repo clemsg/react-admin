@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const UrlField = ({ record = {}, source }) => 
-    <a href={record[source]}>
+    <a href={`http ${record[source]}`}>
         {record[source]}
     </a>;
 
